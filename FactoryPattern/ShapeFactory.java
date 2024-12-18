@@ -1,5 +1,9 @@
 package FactoryPattern;
 
+import FactoryPattern.Shapes.Circle;
+import FactoryPattern.Shapes.Rectangle;
+import FactoryPattern.Shapes.Shape;
+
 public class ShapeFactory {
 
     public Shape getShape(String input){

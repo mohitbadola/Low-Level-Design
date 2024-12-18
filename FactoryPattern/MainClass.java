@@ -1,5 +1,7 @@
 package FactoryPattern;
 
+import FactoryPattern.Shapes.Shape;
+
 //Factory method is used when all the object creation and its bussiness logic we need to keep at one place
 
 public class MainClass {
