@@ -47,7 +47,7 @@ public class TicTacToeGame {
             }
 
             //read user input
-            System.out.print("Player:" + playerTurn.name + " Enter row,column: ");
+            System.out.print("Player:" + playerTurn.name + " Enter row, column: ");
             Scanner sc = new Scanner(System.in);
             String s = sc.nextLine();
             String[] values = s.split(",");
@@ -58,7 +58,7 @@ public class TicTacToeGame {
             boolean pieceAddedSuccessfully = gameBoard.addPiece(inputRow, inputColumn, playerTurn.playingPiece);
             if(!pieceAddedSuccessfully){
                 System.out.println("Incorrect position chosen, try Again!");
-                players.add(playerTurn);
+                players.addFirst(playerTurn);
                 continue;
             }
             players.addLast(playerTurn);
